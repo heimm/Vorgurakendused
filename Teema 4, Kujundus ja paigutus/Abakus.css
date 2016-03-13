@@ -1,0 +1,32 @@
+﻿#validate{
+		bottom: -10px;
+		left: 20px;
+		position: fixed;	  
+	}
+.bead {
+		height: 50px;
+		width: 50px;
+		background: blue;
+		border-radius: 50%;
+		box-shadow: 0px -11px 23px -3px black inset;
+		float: left;
+		margin-top: -25px;
+}
+.row {
+		clear: both;
+		border: gray solid 2px;
+		margin-top: 50px;
+}
+#raam{
+		border: #663300 outset 20px;
+		padding-bottom: 50px;
+}
+.right{
+		height: 50px;
+		width: 50px;
+		background: blue;
+		border-radius: 50%;
+		box-shadow: 0px -11px 23px -3px black inset;
+		float: right;
+		margin-top: -25px;
+}
