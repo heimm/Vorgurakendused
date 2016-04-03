@@ -1,0 +1,23 @@
+﻿div{
+  display: block;
+  background-color: skyblue;
+  border: solid black 1px;
+  padding: 20px;
+  margin: 10px;
+  width: 600px;    
+}
+span{
+  font-weight: bold;
+}
+#link{
+  color: #000000;
+  text-decoration: none;
+  padding: 14px 25px;
+  background-color: white;  
+}
+#link:hover{
+  text-decoration: underline;
+  background-color: gray;
+  color: white;
+  padding: 14px 25px;
+}

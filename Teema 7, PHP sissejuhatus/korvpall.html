@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title> Korvpallurid </title>
+        <link rel="stylesheet" type="text/css" href="korvpall.css">
+  </head>
+  <body>
+    <div>
+      <p>
+        <span><?php echo $korvpallur['nimi']; ?></span> on <?php echo $korvpallur['vanus']; ?>-aastane <?php echo $korvpallur['rahvus']; ?> korvpallur, kes on  <?php echo $korvpallur['pikkus']; ?>m pikk. Ta mängib <?php echo $korvpallur['klubi']; ?> korvpalliklubis.
+      </p>
+      <img src="<?php echo $korvpallur['linkpilt']; ?>" alt= "Mängija pilt" width="150" height="150">
+      <a id="link" href="<?php echo $korvpallur['koduleht']; ?>"> Mängija kodulehekülg </a>
+    </div>
+  </body>
+</html>
