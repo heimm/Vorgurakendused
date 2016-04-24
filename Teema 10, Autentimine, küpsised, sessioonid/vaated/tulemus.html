@@ -1,0 +1,23 @@
+<?php if (isset($_SESSION['vote_for'] )){ ?>
+		 <h3>Valida saab vaid korra!</h3>
+		 <p>Valisid selle ilusa pildi: <br/>
+			 <img src="<?php echo $pildid[$_SESSION['vote_for']]['src'];?>" alt="valitud"/></p>
+			 <a href="?page=vote">vali uuesti!</a>
+<?php	} else{
+		$_SESSION['vote_for'] = $_POST['pilt'];?>
+		<p>Valisid selle ilusa pildi: <br/>
+			<img src="<?php echo $pildid[$_SESSION['vote_for']]['src'];?>" alt="valitud"/></p>
+			<a href="?page=vote">vali uuesti!</a>
+<?php	} ?>
+
+<form method="post" action="?page=tulemus">
+
+	<input type="submit" name="delete" value="Kustuta sessioon">	
+</form>
+
+<?php
+	if (isset($_POST['delete'])){
+		$_SESSION = array();
+		
+		header('Location: ?page=pealeht');
+	} ?>
