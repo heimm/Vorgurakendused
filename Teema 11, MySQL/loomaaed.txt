@@ -1,0 +1,38 @@
+1. Luua uus tabel 'loomaaed', kus on järgnevad väljad:
+
+CREATE TABLE merlenhe_loomaaed(
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+nimi VARCHAR( 100 ) NOT NULL,
+vanus INTEGER NOT NULL,
+liik VARCHAR( 100 ) NOT NULL,
+puur INTEGER NOT NULL
+)
+
+
+2. Täita eelnevalt loodud tabel vähemalt 5 reaga. Sisestamisel valida andmed nii, et mõned loomad jagavad samat puuri ja mõnest liigist on mitu looma.
+
+INSERT INTO merlenhe_loomaaed (nimi, vanus, liik, puur) VALUES 
+('Karvapall', 3, 'Orange', 1),
+('Miisu', 2, 'Grey', 1), 
+("Tupsu", 1, "Striped grey", 2), 
+("Nunnu", 4, "Striped grey", 2), 
+("Kiisu", 5, "Orange", 3);
+
+
+3. Koostada järgnevad päringud:
+
+Hankida kõigi mingis ühes kindlas puuris elavate loomade nimi ja puuri number:
+
+SELECT nimi, puur FROM merlenhe_loomaaed WHERE puur = 1;
+
+Hankida vanima ja noorima looma vanused:
+
+SELECT MIN(vanus), MAX(vanus) FROM merlenhe_loomaaed;
+
+Hankida puuri number koos selles elavate loomade arvuga (vihjeks: group by ja count ):
+
+SELECT COUNT(*), puur FROM merlenhe_loomaaed GROUP BY puur;
+
+Suurendada kõiki tabelis olevaid vanuseid 1 aasta võrra:
+
+UPDATE merlenhe_loomaaed SET vanus = vanus + 1;
