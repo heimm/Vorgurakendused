@@ -1,0 +1,68 @@
+#sisse {
+	background: url('pildid/v2rav.png') no-repeat center;
+	display: inline-block;
+	width: 100%;
+	padding:235px 0px;
+	text-align: center;
+	text-decoration: none;
+	color: gold;
+	font-weight: bold;
+	font-size: 30px;
+	text-shadow:0px 0px 10px black;
+}
+
+body {
+	background: skyblue;
+	margin:0px;
+}
+#wrap{
+	width: 800px;
+	background: white;
+	margin: auto;
+	overflow: auto;
+	min-height:600px;
+}
+#menu {
+	list-style: none;
+	background: PaleGreen;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+#menu li, #menu a {
+	display: inline-block;
+}
+#menu a {
+	padding:5px 20px;
+	color: black;
+	text-decoration: none;
+}
+#menu a:hover {
+	background: Aquamarine;
+	color: DarkSlateGray;
+}
+#content {
+	padding:10px;
+}
+#login{
+	margin:auto;
+	width: 35%;	
+	margin-top:25%;
+}
+.puur {
+	border: dashed grey 2px;
+	margin:20px;
+	float:left;
+	width: 40%;
+	padding:10px;
+}
+.puur img {
+	height: 50px;
+
+}
+.puur h5 {
+	margin: 0px;
+}
+.clear {
+	clear:both;
+}

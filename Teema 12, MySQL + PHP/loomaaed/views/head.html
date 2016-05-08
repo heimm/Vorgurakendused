@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Loomaaed</title>
+	<link rel="stylesheet" type="text/css" href="stiil.css">
+</head>
+<body>
+<div id="wrap">
+	<ul id="menu">
+		<li><a href="?">Pealeht</a></li>
+		<?php if(isset($_SESSION['user'])): ?>
+			<li><a href="?page=loomad">Loomad</a></li>
+			<li><a href="?page=lisa">Lisa loomi</a></li>
+			<li><a href="?page=logout">Logi välja</a></li>
+		<?php else: ?>
+			<li><a href="?page=login">Logi sisse</a></li>
+		<?php endif; ?>
+	</ul>
+	<div id="content">

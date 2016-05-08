@@ -1,0 +1,16 @@
+﻿<div>
+	<?php if (!empty($puurid)){
+
+		foreach($puurid [$puuri_nr] as $loom){
+			if( $loom == $puurid[$puuri_nr][0]){
+
+	?>
+	<h2>Puuris number <?php echo $loom['PUUR'];?> on:<?php } ?></h2><br>
+
+		<img src="<?php echo $loom['liik'];?>" alt="<?php echo $loom['nimi'];?>">
+    <p> <?php echo $loom['nimi'] . ", kelle vanuseks on " . $loom['vanus'] . ".";?> </p>
+	<?php
+}
+}
+?>
+</div>
