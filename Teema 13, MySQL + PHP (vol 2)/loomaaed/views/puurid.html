@@ -1,0 +1,10 @@
+<?php if (!empty($puurid)):?>
+	<?php foreach($puurid as $pid=>$puur): ?>
+		<div class="puur">
+			<h5>Puur <?php echo $pid; ?></h5>
+			<?php foreach($puur as $lid=>$loom): ?>
+				<img src="<?php echo $loom['liik']; ?>" alt="<?php echo $loom['nimi']; ?>" title="<?php echo $loom['nimi']; ?>">
+			<?php endforeach; ?>
+		</div>
+	<?php endforeach; ?>
+<?php endif;?>
